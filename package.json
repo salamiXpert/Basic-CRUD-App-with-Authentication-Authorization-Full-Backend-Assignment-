@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "FlightDev": "nodemon FlightApp",
-    "start":"node FlightApp"
+    "FlightDev": "nodemon FlightApp.js",
+    "start":"node FlightApp.js"
   },
   "keywords": [],
   "author": "",
