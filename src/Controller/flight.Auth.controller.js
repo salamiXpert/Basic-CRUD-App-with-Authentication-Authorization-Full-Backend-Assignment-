@@ -26,11 +26,11 @@ const SignUp = async (req,res) => {
             otp,
             otp_Expiry
         });
-        await sendEmail(
-            email,
-            "Welcome to Airline flight booking applications,please verify your signup",
-            `Here is verification otp:${otp}`
-        );
+        // await sendEmail(
+        //     email,
+        //     "Welcome to Airline flight booking applications,please verify your signup",
+        //     `Here is verification otp:${otp}`
+        // );
         await NewUser.save();
         return res.status(200).json({messsage:`Signup successfull,check your email for otp verification`,otp});
     }catch(error) {
