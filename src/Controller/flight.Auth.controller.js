@@ -102,11 +102,11 @@ const ResendOTP = async (req,res) => {
         const otp_Expiry = new Date(Date.now() + 10 * 60 * 1000);
         resendOTP.otp = otp;
         resendOTP.otp_Expiry = otp_Expiry;
-         await sendEmail(
-            email,
-            "Welcome to Airline flight booking applications,we've resend the otp",
-            `check your resent otp:${otp}`
-        );
+        //  await sendEmail(
+        //     email,
+        //     "Welcome to Airline flight booking applications,we've resend the otp",
+        //     `check your resent otp:${otp}`
+        // );
         await resendOTP.save();
         return res.status(200).json({message:`OTP resent successfully`,otp});
     }catch(error) {
@@ -129,11 +129,11 @@ const ForgotPassword = async (req,res) => {
         const otp_Expiry = new Date(Date.now() + 10 * 60 * 1000);
         Recoveredpassword.otp = otp;
         Recoveredpassword.otp_Expiry = otp_Expiry;
-         await sendEmail(
-            email,
-            "Welcome to Airline flight booking applications,please check your otp forgot password",
-            `Here is your forgot password otp:${otp}`
-        );
+        //  await sendEmail(
+        //     email,
+        //     "Welcome to Airline flight booking applications,please check your otp forgot password",
+        //     `Here is your forgot password otp:${otp}`
+        // );
         await Recoveredpassword.save();
         return res.status(200).json({message:`otp sent successfully`,otp});
     }catch(error) {
