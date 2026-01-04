@@ -56,7 +56,7 @@ const Login = async (req,res) => {
         if(!ComparedEmail.isVerified) {
             return res.status(401).json({message:`User not verified, please verify your account`});
         }
-        const token = jwt.sign({User_id:ComparedEmail.id},process.env.jwt_SECRET,{expiresIn:"1hr"});
+        const token = jwt.sign({User_id:ComparedEmail.id},process.env.JWT_SECRET,{expiresIn:"1hr"});
             return res.status(200).json({message:`Login successfull`,token});
     }catch(error) {
         console.error(`Failed to Login into in flight application`);
