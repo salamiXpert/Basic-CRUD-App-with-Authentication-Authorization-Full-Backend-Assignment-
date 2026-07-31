@@ -1,4 +1,4 @@
-# Basic-CRUD-App-with-Authentication-Authorization-Full-Backend-Assignment-
+# Basic-CRUD-App-with-Authentication-Authorization-Full-
 📘 Overview
 In this assignment, you will build a basic RESTful API using Node.js, Express.js, MongoDB, JWT, and bcrypt.
 Your application should include user authentication, authorization, and CRUD operations for a chosen resource (e.g., Posts, Tasks, Products, or Notes).
