@@ -1,6 +1,6 @@
 # Basic-CRUD-App-with-Authentication-Authorization-Full-
 📘 Overview
-In this assignment, you will build a basic RESTful API using Node.js, Express.js, MongoDB, JWT, and bcrypt.
+In this Project, you will build a basic RESTful API using Node.js, Express.js, MongoDB, JWT, and bcrypt.
 Your application should include user authentication, authorization, and CRUD operations for a chosen resource (e.g., Posts, Tasks, Products, or Notes).
 
 The goal of this project is to help you understand how backend systems handle secure user management and data operations using Express.js and MongoDB.
